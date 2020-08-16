@@ -1,0 +1,450 @@
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #70716f;
+  font-weight: 300;
+  font-family: "Abel", sans-serif;
+  background-color: white;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/500163/registration-mark--light.svg);
+  background-repeat: no-repeat;
+  background-position: center 2rem;
+  background-size: contain;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+  position: relative;
+}
+a:before {
+  content: "";
+  background-color: rgba(22, 144, 179, 0.2);
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+a:hover {
+  color: #137e9c;
+}
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.wrap {
+  max-width: 1200px;
+  margin: 1rem;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "id" "statement" "connect" "experience" "skills";
+}
+@media (min-width: 601px) {
+  .wrap {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "id        id         id        " "statement statement  connect   " "skills    experience experience";
+  }
+}
+@media (min-width: 761px) {
+  .wrap {
+    margin: 2rem;
+    grid-template-areas: "statement statement  connect   " "id        id         connect   " "skills    experience experience";
+  }
+}
+@media (min-width: 1021px) {
+  .wrap {
+    margin: 2rem auto;
+    padding: 2rem;
+    grid-gap: 2rem;
+  }
+}
+
+.id {
+  grid-area: id;
+}
+
+.connect {
+  grid-area: connect;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+}
+.connect li {
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 2rem;
+  min-height: 2rem;
+  margin: 0.5rem 0;
+  padding-left: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 761px) {
+  .connect li {
+    margin: 1rem 0;
+  }
+}
+.connect li#connect__address {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/500163/resume-icon--home.png);
+}
+.connect li#connect__phone {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/500163/resume-icon--phone.png);
+}
+.connect li#connect__email {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/500163/resume-icon--email.png);
+}
+.connect li#connect__github {
+  background-image: url(../images/GitHub-Mark-64px.png);
+}
+.connect li#connect__linkedin {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/500163/resume-icon--linkedin.png);
+}
+
+.statement {
+  grid-area: statement;
+}
+@media (min-width: 1021px) {
+  .statement {
+    padding-left: 7.5rem;
+  }
+}
+
+.experience {
+  grid-area: experience;
+}
+.experience ul li {
+  margin: 1rem 0;
+  display: grid;
+}
+@media (min-width: 761px) {
+  .experience ul li {
+    grid-template-columns: 22ch 1fr;
+  }
+  .experience ul li h4,
+  .experience ul li h5,
+  .experience ul li p {
+    grid-column: 2 / 3;
+  }
+  .experience ul li h6 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+}
+@media (min-width: 1021px) {
+  .experience ul li {
+    grid-template-columns: 25ch 1fr;
+  }
+}
+
+.skills {
+  grid-area: skills;
+}
+.skills ul {
+  margin-bottom: 2rem;
+}
+.skills ul li {
+  margin: 1rem 0;
+}
+.skills .skills__web li,
+.skills .skills__graphic li {
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 4rem;
+  min-height: 4rem;
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+.skills .skills__web li#skills__html5,
+.skills .skills__graphic li#skills__html5 {
+  background-image: url(../images/html.png);
+}
+.skills .skills__web li#skills__javascript,
+.skills .skills__graphic li#skills__javascript {
+  background-image: url(../images/JavaScript_Logo-700x700.png);
+}
+.skills .skills__web li#skills__ide,
+.skills .skills__graphic li#skills__ide {
+  background-image: url(../images/coding.png);
+}
+.skills .skills__web li#skills__sgbd,
+.skills .skills__graphic li#skills__sgbd {
+  background-image: url(../images/server.png);
+}
+.skills .skills__web li#skills__os,
+.skills .skills__graphic li#skills__os {
+  background-image: url(../images/os.png);
+}
+
+.skills .skills__web li#skills__versionning,
+.skills .skills__graphic li#skills__versionning {
+  background-image: url(../images/versionning.png);
+}
+.skills .skills__web li#skills__test,
+.skills .skills__graphic li#skills__test {
+  background-image: url(../images/test.png);
+}
+
+.skills .skills__web li#skills__java,
+.skills .skills__graphic li#skills__java {
+  background-image: url(../images/Java_logo.png);
+}
+
+.skills .skills__web li#skills__python,
+.skills .skills__graphic li#skills__python {
+  background-image: url(../images/python.png);
+}
+
+.skills .skills__web li#skills__SQL,
+.skills .skills__graphic li#skills__SQL {
+  background-image: url(../images/sql.jpg);
+}
+
+h1 {
+  color: #1690b3;
+  font-weight: 700;
+  font-size: 14vw;
+  font-family: "Montserrat", sans-serif;
+}
+@media (min-width: 421px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 601px) {
+  h1 {
+    font-size: 9.8vw;
+  }
+}
+@media (min-width: 761px) {
+  h1 {
+    font-size: 6.2vw;
+  }
+}
+@media (min-width: 1021px) {
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
+
+h2 {
+  color: #333333;
+  font-size: 8vw;
+  margin: 0.5rem 0;
+}
+@media (min-width: 601px) {
+  h2 {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 761px) {
+  h2 {
+    font-size: 4vw;
+    text-align: right;
+  }
+}
+@media (min-width: 1021px) {
+  h2 {
+    font-size: 2.75rem;
+  }
+}
+
+h3 {
+  color: #ed5e11;
+  font-weight: 700;
+  font-size: 1.75rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1rem;
+}
+@media (min-width: 1021px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+h4 {
+  color: #1690b3;
+  font-weight: 700;
+  font-size: 1.25rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.25rem;
+}
+@media (min-width: 1021px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+}
+
+h5 {
+  color: #333333;
+  font-size: 1.125rem;
+}
+@media (min-width: 1021px) {
+  h5 {
+    font-size: 1.25rem;
+  }
+}
+
+h6 {
+  color: #8aaab3;
+  font-weight: 700;
+  font-size: 1.125rem;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0.75rem;
+}
+@media (min-width: 761px) {
+  h6 {
+    font-size: 1.25rem;
+    text-align: right;
+    margin: 0;
+    padding-right: 2.25rem;
+    position: relative;
+  }
+  h6:after {
+    content: "\2022";
+    color: #ed5e11;
+    font-size: 3rem;
+    line-height: 1;
+    padding: 0 0.5rem;
+    position: absolute;
+    top: -1rem;
+    right: 0;
+  }
+}
+@media (min-width: 1021px) {
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  line-height: 1.5;
+}
+@media (min-width: 1021px) {
+  p {
+    font-size: 1.125rem;
+  }
+}
+p.statement {
+  color: #6b949f;
+}
+
+@media (min-width: 761px) {
+  .experience h3 {
+    text-indent: calc(9ch + 0.5rem);
+  }
+}
+.experience p {
+  font-family: "Kreon", serif;
+  margin: 0.5rem 0;
+}
+
+.connect,
+.skills {
+  color: #333333;
+}
+.connect strong,
+.skills strong {
+  color: #1690b3;
+}
+
+.skills__web,
+.skills__graphic {
+  font-size: 1.25rem;
+}
+@media (min-width: 1021px) {
+  .skills__web,
+  .skills__graphic {
+    font-size: 1.5rem;
+  }
+}
+
+.skills__etc {
+  color: #70716f;
+}
+@media (min-width: 1021px) {
+  .skills__etc {
+    font-size: 1.125rem;
+  }
+}
+
+/* navbar*/
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
