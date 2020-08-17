@@ -163,7 +163,8 @@ a:hover:before {
   margin: 1rem 0;
 }
 .skills .skills__web li,
-.skills .skills__graphic li {
+.skills .skills__graphic li,
+.skills__langue li {
   background-repeat: no-repeat;
   background-position: left top;
   background-size: 4rem;
@@ -215,6 +216,16 @@ a:hover:before {
 .skills .skills__web li#skills__SQL,
 .skills .skills__graphic li#skills__SQL {
   background-image: url(../images/sql.jpg);
+}
+
+.skills .skills__langue li#skills__english,
+.skills .skills__graphic li#skills__english {
+  background-image: url(../images/english.png);
+}
+
+.skills .skills__langue li#skills__japonais,
+.skills .skills__graphic li#skills__japonais {
+  background-image: url(../images/japon.png);
 }
 
 h1 {
@@ -367,12 +378,14 @@ p.statement {
 }
 
 .skills__web,
-.skills__graphic {
+.skills__graphic,
+.skills__langue {
   font-size: 1.25rem;
 }
 @media (min-width: 1021px) {
   .skills__web,
-  .skills__graphic {
+  .skills__graphic,
+  .skills__langue {
     font-size: 1.5rem;
   }
 }
