@@ -59,8 +59,64 @@
     background-color: #444;
   }
   */
+}
 
-  body {
-    background-image: url(../images/developpement.jpg);
-  }
+body {
+  background-image: url(../images/developpement.jpg);
+}
+
+/*Partie grid css pour les projets*/
+.image {
+  grid-area: image;
+}
+.texte {
+  grid-area: texte;
+}
+
+.projet {
+  display: grid;
+  grid-template-areas: "image image texte texte texte texte";
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.projet > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* Galerie de photos
+
+  /* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
 }

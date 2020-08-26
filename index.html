@@ -14,6 +14,207 @@
       </ul>
     </div>
 
-    <p>Site en cours de construction.</p>
+    <h1>Mes projects</h1>
+
+    <div class="projet">
+      <div class="image">
+        <div style="text-align: center;">
+          <h2>Tabbed Image Gallery</h2>
+          <p>Click on the images below:</p>
+        </div>
+
+        <!-- The four columns -->
+        <div class="row">
+          <div class="column">
+            <img
+              src="img_nature.jpg"
+              alt="Nature"
+              style="width: 100%;"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_snow.jpg"
+              alt="Snow"
+              style="width: 100%;"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_mountains.jpg"
+              alt="Mountains"
+              style="width: 100%;"
+              onclick="myFunction(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_lights.jpg"
+              alt="Lights"
+              style="width: 100%;"
+              onclick="myFunction(this);"
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+          <img id="expandedImg" style="width: 100%;" />
+          <div id="imgtext"></div>
+        </div>
+      </div>
+      <div class="texte">
+        <h2>Traducteur mot à mot pour lire des mangas en japonais</h2>
+        <h3>But de l'application</h3>
+        <p>
+          Améliorer mes compétence et m'aider à traduire des mangas du japonais
+          à l'anglais. Pour arriver à lire j'avais besoin de la traduction
+          phonétique des kanji, j'avais suffisament d'épisode d'animé en VO
+          derrière moi pour comprendre après traduction en phonétique. Faut
+          savoir un kanji il y en a plus de 2000 et chaque kanji peut avoir
+          plusieurs prononciations et sens différents.
+        </p>
+        <h3>Fonctionnalités de l'application</h3>
+        <ul>
+          <li>
+            Contient une liste de kanji modifiable avec leurs différentes
+            prononciations et leurs différents sens
+          </li>
+          <li>
+            Contient une liste de mot de vocabulaire modifiable avec leurs
+            prononciations et leurs différents sens
+          </li>
+          <li>
+            Contient une liste de nom propre japonais modifiable avec leurs
+            prononciations
+          </li>
+          <li>
+            Permet de chercher un kanji dans la base de données en fonction de
+            son nombre de trait, de son sens, sa prononciation
+          </li>
+          <li>
+            Permet de chercher un mot de vocabulaire dans la base de données en
+            fonction de son sens, sa prononciation
+          </li>
+          <li>
+            Permet de saisir un texte en japonais grace à son clavier en ligne
+            très intuitif
+          </li>
+          <li>
+            Permet de chercher un mot de vocabulaire ou un kanji puis de
+            l'ajouter à son texte que l'on veut traduire
+          </li>
+          <li>
+            Permet de traduire un texte en cherchant en premier les mot des
+            vocabulaires et kanji présent dans le texte
+          </li>
+        </ul>
+        <h3>Technologies employés</h3>
+        <ul>
+          <li>Language de programmation : Java 8</li>
+          <li>IDE : Eclipse</li>
+          <li>Gestionnaire de version : Git</li>
+          <li>Serveur d'application : Tomcat, Glassfish, wildfly</li>
+          <li>
+            Technologies java utilisés : Spring, hibernate, JSF, Primefaces
+          </li>
+        </ul>
+        <h3>Statut du projet</h3>
+        <p>
+          Le projet est terminé et fonctionnel. Le rmeplissage des 2000 kanjis
+          dans la base de données fut longues, très longues. Le remplissage de
+          la liste desm ots de vocabulaires s'est fait au fur et à mesure des
+          traductions.
+        </p>
+      </div>
+    </div>
+
+    <div class="projet">
+      <div class="image"></div>
+      <div class="texte">
+        <h2>Ma transition</h2>
+        <h3>But de l'application</h3>
+        <p>
+          Améliorer mes compétence et proposer au utilisateur une application
+          qui propose des défis pour devenir le meilleur écologiste possible et
+          imaginable.
+        </p>
+        <h3>Fonctionnalités de l'application</h3>
+        <ul>
+          <li>
+            Proposer des défis au utilisateur
+          </li>
+          <li>
+            Proposer un suivi de ses défis dans le temps
+          </li>
+        </ul>
+        <h3>Technologies employés</h3>
+        <ul>
+          <li>Language de programmation : Java 8</li>
+          <li>IDE : Eclipse</li>
+          <li>Gestionnaire de version : Git</li>
+          <li>Serveur d'application : wildfly</li>
+          <li>
+            Technologies java utilisés : Spring, hibernate, JSF, Primefaces
+          </li>
+        </ul>
+        <h3>Statut du projet</h3>
+        <p>
+          Le projet n'est pas terminé, il est un peu fonctionnel. Il est au
+          point mort.
+        </p>
+      </div>
+    </div>
+
+    <div class="projet">
+      <div class="image"></div>
+      <div class="texte">
+        <h2>Gestion de la micro entreprise</h2>
+        <h3>But de l'application</h3>
+        <p>
+          Apprendre le python et javascript et créer une application de gestion
+          pour une micro entreprise. L'application est en deux partie, une
+          permière partie back-end en python qui gère la base de données, et une
+          partie front-end en javascript Vue Js.
+        </p>
+        <h3>Fonctionnalités de l'application</h3>
+        <ul>
+          <li>
+            Création d'utilisateur
+          </li>
+          <li>
+            Gestion d'une micro entreprise (gestion des factures, dépense,
+            échéances de paiements, génération de documents comptables)
+          </li>
+        </ul>
+        <h3>Technologies employés</h3>
+        <ul>
+          <li>Language de programmation : Vue Js, Python 3.8</li>
+          <li>IDE : Visiual Studio Code</li>
+          <li>Serveur d'application :</li>
+          <li>Technologies python utilisés : Flask, SqlAlchemy, Marshmallow</li>
+        </ul>
+        <h3>Statut du projet</h3>
+        <p>
+          Le projet est en cours.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
+
+<script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+</script>
