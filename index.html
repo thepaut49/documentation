@@ -16,9 +16,10 @@
 
     <h1>Mes projects</h1>
 
+    <h2>Traducteur mot à mot pour lire des mangas en japonais</h2>
     <div class="projet">
       <div class="image">
-        <div style="text-align: center;">
+        <div style="text-align: center">
           <h2>Tabbed Image Gallery</h2>
           <p>Click on the images below:</p>
         </div>
@@ -29,7 +30,7 @@
             <img
               src="img_nature.jpg"
               alt="Nature"
-              style="width: 100%;"
+              style="width: 100%"
               onclick="myFunction(this);"
             />
           </div>
@@ -37,7 +38,7 @@
             <img
               src="img_snow.jpg"
               alt="Snow"
-              style="width: 100%;"
+              style="width: 100%"
               onclick="myFunction(this);"
             />
           </div>
@@ -45,7 +46,7 @@
             <img
               src="img_mountains.jpg"
               alt="Mountains"
-              style="width: 100%;"
+              style="width: 100%"
               onclick="myFunction(this);"
             />
           </div>
@@ -53,7 +54,7 @@
             <img
               src="img_lights.jpg"
               alt="Lights"
-              style="width: 100%;"
+              style="width: 100%"
               onclick="myFunction(this);"
             />
           </div>
@@ -65,12 +66,11 @@
             class="closebtn"
             >&times;</span
           >
-          <img id="expandedImg" style="width: 100%;" />
+          <img id="expandedImg" style="width: 100%" />
           <div id="imgtext"></div>
         </div>
       </div>
       <div class="texte">
-        <h2>Traducteur mot à mot pour lire des mangas en japonais</h2>
         <h3>But de l'application</h3>
         <p>
           Améliorer mes compétence et m'aider à traduire des mangas du japonais
@@ -124,6 +124,7 @@
           <li>
             Technologies java utilisés : Spring, hibernate, JSF, Primefaces
           </li>
+          <li>SGBD : MySql</li>
         </ul>
         <h3>Statut du projet</h3>
         <p>
@@ -135,10 +136,212 @@
       </div>
     </div>
 
+    <h2>Traducteur mot à mot pour lire du japonais version mobile</h2>
     <div class="projet">
-      <div class="image"></div>
+      <div class="image">
+        <div style="text-align: center">
+          <h2>Tabbed Image Gallery</h2>
+          <p>Click on the images below:</p>
+        </div>
+
+        <!-- The four columns -->
+        <div class="row">
+          <div class="column">
+            <img
+              src="./images/Nihongo/Menu.jpg"
+              alt="Menu de l'application"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/Nihongo/Hiragana.jpg"
+              alt="Hiragana"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/Nihongo/Katakana.jpg"
+              alt="Katakana"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/Nihongo/Liste-kanji.jpg"
+              alt="Liste des kanjis"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+        </div>
+        <br />
+        <div class="row">
+          <div class="column">
+            <img
+              src="./images/Nihongo/Recherche-kanji.jpg"
+              alt="Recherche de kanji par radical"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/Nihongo/Recherche-kanji-kana.jpg"
+              alt="Recherche de kanji par kana"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/Nihongo/Liste-vocabulaire.jpg"
+              alt="Liste de vocabulaire"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/Nihongo/recherche-voc-kana.jpg"
+              alt="Recherche de vocabulaire par kana"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+        </div>
+
+        <br />
+        <div class="row">
+          <div class="column">
+            <img
+              src="./images/Nihongo/traduction.jpg"
+              alt="Traducteur mot à mot"
+              style="width: 100%"
+              onclick="myFunction2(this);"
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+          <img id="expandedImg2" style="width: 100%" />
+          <div id="imgtext2"></div>
+        </div>
+      </div>
       <div class="texte">
-        <h2>Ma transition</h2>
+        <h3>But de l'application</h3>
+        <p>
+          Améliorer mes compétence et m'aider à traduire du japonais en
+          l'anglais. c'est pratiquement la même application que la version appli
+          web mais c'est pour mobile avec une base de données interne.
+        </p>
+        <h3>Fonctionnalités de l'application</h3>
+        <ul>
+          <li>
+            Contient une liste de kanji non modifiable avec leurs différentes
+            prononciations et leurs différents sens
+          </li>
+          <li>
+            Contient une liste de mot de vocabulaire non modifiable avec leurs
+            prononciations et leurs différents sens
+          </li>
+          <li>
+            Permet de chercher un kanji dans la base de données en fonction de
+            son nombre de trait, de son sens, sa prononciation
+          </li>
+          <li>
+            Permet de chercher un mot de vocabulaire dans la base de données en
+            fonction de son sens, sa prononciation
+          </li>
+          <li>
+            Permet de saisir un texte en japonais grace à son clavier très
+            intuitif
+          </li>
+          <li>
+            Permet de chercher un mot de vocabulaire ou un kanji puis de
+            l'ajouter à son texte que l'on veut traduire
+          </li>
+          <li>
+            Permet de traduire un texte en cherchant en premier les mot des
+            vocabulaires et kanji présent dans le texte
+          </li>
+        </ul>
+        <h3>Technologies employés</h3>
+        <ul>
+          <li>Language de programmation : Java 6</li>
+          <li>IDE : Android studio</li>
+          <li>Gestionnaire de version : Git</li>
+          <li>SGBD : SQLite</li>
+        </ul>
+        <h3>Statut du projet</h3>
+        <p>Le projet est terminé et fonctionnel.</p>
+      </div>
+    </div>
+
+    <h2>Ma transition</h2>
+    <div class="projet">
+      <div class="image">
+        <div style="text-align: center">
+          <h2>Tabbed Image Gallery</h2>
+          <p>Click on the images below:</p>
+        </div>
+
+        <!-- The four columns -->
+        <div class="row">
+          <div class="column">
+            <img
+              src="img_nature.jpg"
+              alt="Nature"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_snow.jpg"
+              alt="Snow"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_mountains.jpg"
+              alt="Mountains"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_lights.jpg"
+              alt="Lights"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+          <img id="expandedImg3" style="width: 100%" />
+          <div id="imgtext3"></div>
+        </div>
+      </div>
+      <div class="texte">
         <h3>But de l'application</h3>
         <p>
           Améliorer mes compétence et proposer au utilisateur une application
@@ -147,12 +350,8 @@
         </p>
         <h3>Fonctionnalités de l'application</h3>
         <ul>
-          <li>
-            Proposer des défis au utilisateur
-          </li>
-          <li>
-            Proposer un suivi de ses défis dans le temps
-          </li>
+          <li>Proposer des défis au utilisateur</li>
+          <li>Proposer un suivi de ses défis dans le temps</li>
         </ul>
         <h3>Technologies employés</h3>
         <ul>
@@ -160,6 +359,7 @@
           <li>IDE : Eclipse</li>
           <li>Gestionnaire de version : Git</li>
           <li>Serveur d'application : wildfly</li>
+          <li>SGBD : MySql</li>
           <li>
             Technologies java utilisés : Spring, hibernate, JSF, Primefaces
           </li>
@@ -172,10 +372,61 @@
       </div>
     </div>
 
+    <h2>Gestion de la micro entreprise</h2>
     <div class="projet">
-      <div class="image"></div>
+      <div class="image">
+        <div style="text-align: center">
+          <h2>Tabbed Image Gallery</h2>
+          <p>Click on the images below:</p>
+        </div>
+
+        <!-- The four columns -->
+        <div class="row">
+          <div class="column">
+            <img
+              src="img_nature.jpg"
+              alt="Nature"
+              style="width: 100%"
+              onclick="myFunction4(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_snow.jpg"
+              alt="Snow"
+              style="width: 100%"
+              onclick="myFunction4(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_mountains.jpg"
+              alt="Mountains"
+              style="width: 100%"
+              onclick="myFunction4(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_lights.jpg"
+              alt="Lights"
+              style="width: 100%"
+              onclick="myFunction4(this);"
+            />
+          </div>
+        </div>
+
+        <div class="container">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+          <img id="expandedImg4" style="width: 100%" />
+          <div id="imgtext4"></div>
+        </div>
+      </div>
       <div class="texte">
-        <h2>Gestion de la micro entreprise</h2>
         <h3>But de l'application</h3>
         <p>
           Apprendre le python et javascript et créer une application de gestion
@@ -185,9 +436,7 @@
         </p>
         <h3>Fonctionnalités de l'application</h3>
         <ul>
-          <li>
-            Création d'utilisateur
-          </li>
+          <li>Création d'utilisateur</li>
           <li>
             Gestion d'une micro entreprise (gestion des factures, dépense,
             échéances de paiements, génération de documents comptables)
@@ -201,9 +450,7 @@
           <li>Technologies python utilisés : Flask, SqlAlchemy, Marshmallow</li>
         </ul>
         <h3>Statut du projet</h3>
-        <p>
-          Le projet est en cours.
-        </p>
+        <p>Le projet est en cours.</p>
       </div>
     </div>
   </body>
@@ -213,6 +460,30 @@
   function myFunction(imgs) {
     var expandImg = document.getElementById("expandedImg");
     var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+
+  function myFunction2(imgs) {
+    var expandImg = document.getElementById("expandedImg2");
+    var imgText = document.getElementById("imgtext2");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+
+  function myFunction3(imgs) {
+    var expandImg = document.getElementById("expandedImg3");
+    var imgText = document.getElementById("imgtext3");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+  }
+
+  function myFunction4(imgs) {
+    var expandImg = document.getElementById("expandedImg4");
+    var imgText = document.getElementById("imgtext4");
     expandImg.src = imgs.src;
     imgText.innerHTML = imgs.alt;
     expandImg.parentElement.style.display = "block";

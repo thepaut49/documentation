@@ -1,3 +1,30 @@
+html {
+  background-color: #d6dbdf;
+}
+
+/* Heading */
+h1 {
+  font-size: 48px;
+  text-shadow: -1px -1px #9df, 1px 1px #49d, -3px 0 4px #000;
+  font-family: "Segoe print", Arial, Helvetica, sans-serif;
+  color: #6bf;
+  padding: 24px 32px 32px 32px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 150px;
+  text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000;
+  font-family: "Segoe print", Arial, Helvetica, sans-serif;
+  color: #ff9933;
+  padding: 32px;
+  font-weight: lighter;
+  text-align: left;
+  display: inline;
+}
+
 /* navbar*/
 .nav ul {
   list-style: none;
@@ -61,10 +88,6 @@
   */
 }
 
-body {
-  background-image: url(../images/developpement.jpg);
-}
-
 /*Partie grid css pour les projets*/
 .image {
   grid-area: image;
@@ -77,19 +100,38 @@ body {
   display: grid;
   grid-template-areas: "image image texte texte texte texte";
   grid-gap: 10px;
-  background-color: #2196f3;
   padding: 10px;
 }
 
 .projet > div {
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 0;
   font-size: 30px;
 }
 
-/* Galerie de photos
+/* Galerie de photos */
 
-  /* Clear floats after the columns */
+* {
+  box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
