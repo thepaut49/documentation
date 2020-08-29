@@ -25,6 +25,34 @@ h2 {
   display: inline;
 }
 
+.titre-appli {
+  background-color: #888;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1.2px;
+  color: #009900;
+}
+
+p,
+li {
+  font-family: Verdana;
+  color: #555555;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
+
+li {
+  list-style-type: circle;
+}
+
+.tech li {
+  list-style-type: none;
+}
+
 /* navbar*/
 .nav ul {
   list-style: none;

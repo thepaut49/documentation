@@ -14,16 +14,97 @@
       </ul>
     </div>
 
-    <h1>Mes projects</h1>
+    <h1>Mes projets</h1>
 
-    <h2>Traducteur mot à mot pour lire des mangas en japonais</h2>
+    <div class="titre-appli">
+      <h2>Gestion de la micro entreprise</h2>
+    </div>
+
     <div class="projet">
       <div class="image">
-        <div style="text-align: center">
-          <h2>Tabbed Image Gallery</h2>
-          <p>Click on the images below:</p>
+        <!-- The four columns -->
+        <div class="row">
+          <div class="column">
+            <img
+              src="img_nature.jpg"
+              alt="Nature"
+              style="width: 100%"
+              onclick="myFunction4(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_snow.jpg"
+              alt="Snow"
+              style="width: 100%"
+              onclick="myFunction4(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_mountains.jpg"
+              alt="Mountains"
+              style="width: 100%"
+              onclick="myFunction4(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="img_lights.jpg"
+              alt="Lights"
+              style="width: 100%"
+              onclick="myFunction4(this);"
+            />
+          </div>
         </div>
 
+        <div class="container">
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="closebtn"
+            >&times;</span
+          >
+          <img id="expandedImg4" style="width: 100%" />
+          <div id="imgtext4"></div>
+        </div>
+      </div>
+      <div class="texte">
+        <h3>But de l'application</h3>
+        <p>
+          Apprendre le python et javascript et créer une application de gestion
+          pour une micro entreprise. L'application est en deux partie, une
+          permière partie back-end en python qui gère la base de données, et une
+          partie front-end en javascript Vue Js.
+        </p>
+        <h3>Fonctionnalités de l'application</h3>
+        <ul>
+          <li>Création d'utilisateur</li>
+          <li>
+            Gestion d'une micro entreprise (gestion des factures, dépense,
+            échéances de paiements, génération de documents comptables)
+          </li>
+        </ul>
+        <h3>Technologies employés</h3>
+        <ul class="tech">
+          <li><b>Language de programmation :</b> Vue Js, Python 3.8</li>
+          <li><b>IDE :</b> Visiual Studio Code</li>
+          <li><b>Serveur d'application :</b></li>
+          <li>
+            <b>Technologies python utilisés :</b> Flask, SqlAlchemy, Marshmallow
+          </li>
+          <li><b>Technologies javascript utilisés :</b> Vue.js</li>
+        </ul>
+        <h3>Statut du projet</h3>
+        <p>Le projet est en cours.</p>
+      </div>
+    </div>
+
+    <div class="titre-appli">
+      <h2>JSF_Spring_Hibernate</h2>
+    </div>
+
+    <div class="projet">
+      <div class="image">
         <!-- The four columns -->
         <div class="row">
           <div class="column">
@@ -116,34 +197,33 @@
           </li>
         </ul>
         <h3>Technologies employés</h3>
-        <ul>
-          <li>Language de programmation : Java 8</li>
-          <li>IDE : Eclipse</li>
-          <li>Gestionnaire de version : Git</li>
-          <li>Serveur d'application : Tomcat, Glassfish, wildfly</li>
+        <ul class="tech">
+          <li><b>Language de programmation :</b> Java 8</li>
+          <li><b>IDE :</b> Eclipse</li>
+          <li><b>Gestionnaire de version :</b> Git</li>
+          <li><b>Serveur d'application :</b> Tomcat, Glassfish, wildfly</li>
           <li>
-            Technologies java utilisés : Spring, hibernate, JSF, Primefaces
+            <b>Technologies java utilisés :</b> Spring, hibernate, JSF,
+            Primefaces
           </li>
-          <li>SGBD : MySql</li>
+          <li><b>SGBD :</b> MySql</li>
         </ul>
         <h3>Statut du projet</h3>
         <p>
-          Le projet est terminé et fonctionnel. Le rmeplissage des 2000 kanjis
+          Le projet est terminé et fonctionnel. Le remplissage des 2000 kanjis
           dans la base de données fut longues, très longues. Le remplissage de
-          la liste desm ots de vocabulaires s'est fait au fur et à mesure des
+          la liste des mots de vocabulaires s'est fait au fur et à mesure des
           traductions.
         </p>
       </div>
     </div>
 
-    <h2>Traducteur mot à mot pour lire du japonais version mobile</h2>
+    <div class="titre-appli">
+      <h2>日本語</h2>
+    </div>
+
     <div class="projet">
       <div class="image">
-        <div style="text-align: center">
-          <h2>Tabbed Image Gallery</h2>
-          <p>Click on the images below:</p>
-        </div>
-
         <!-- The four columns -->
         <div class="row">
           <div class="column">
@@ -276,55 +356,114 @@
           </li>
         </ul>
         <h3>Technologies employés</h3>
-        <ul>
-          <li>Language de programmation : Java 6</li>
-          <li>IDE : Android studio</li>
-          <li>Gestionnaire de version : Git</li>
-          <li>SGBD : SQLite</li>
+        <ul class="tech">
+          <li><b>Language de programmation :</b> Java 6</li>
+          <li><b>IDE :</b> Android studio</li>
+          <li><b>Gestionnaire de version :</b> Git</li>
+          <li><b>SGBD :</b> SQLite</li>
         </ul>
         <h3>Statut du projet</h3>
         <p>Le projet est terminé et fonctionnel.</p>
       </div>
     </div>
 
-    <h2>Ma transition</h2>
+    <div class="titre-appli">
+      <h2>Ma transition</h2>
+    </div>
     <div class="projet">
       <div class="image">
-        <div style="text-align: center">
-          <h2>Tabbed Image Gallery</h2>
-          <p>Click on the images below:</p>
-        </div>
-
         <!-- The four columns -->
         <div class="row">
           <div class="column">
             <img
-              src="img_nature.jpg"
-              alt="Nature"
+              src="./images/MaTransition/Acceuil-inconnu.png"
+              alt="Accueil utilisateur inconnu"
               style="width: 100%"
               onclick="myFunction3(this);"
             />
           </div>
           <div class="column">
             <img
-              src="img_snow.jpg"
-              alt="Snow"
+              src="./images/MaTransition/inscription.png"
+              alt="Inscription"
               style="width: 100%"
               onclick="myFunction3(this);"
             />
           </div>
           <div class="column">
             <img
-              src="img_mountains.jpg"
-              alt="Mountains"
+              src="./images/MaTransition/connexion.png"
+              alt="Connexion"
               style="width: 100%"
               onclick="myFunction3(this);"
             />
           </div>
           <div class="column">
             <img
-              src="img_lights.jpg"
-              alt="Lights"
+              src="./images/MaTransition/Acceuil-connecter.png"
+              alt="Accueil utilisateur identifié"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img
+              src="./images/MaTransition/MesDéfis.png"
+              alt="Liste des défis"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/MaTransition/creation-defisP1.png"
+              alt="Création de défis partie 1"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/MaTransition/creation-defisP2.png"
+              alt="Création de défis partie 2"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/MaTransition/Messages.png"
+              alt="Gestion des messages entre utilisateur"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img
+              src="./images/MaTransition/profil.png"
+              alt="Profil de l'utilisateur"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/MaTransition/réseau.png"
+              alt="Gestion des relations entre utilisateur"
+              style="width: 100%"
+              onclick="myFunction3(this);"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./images/MaTransition/Paramétrage.png"
+              alt="Paramétrage de l'application"
               style="width: 100%"
               onclick="myFunction3(this);"
             />
@@ -344,24 +483,26 @@
       <div class="texte">
         <h3>But de l'application</h3>
         <p>
-          Améliorer mes compétence et proposer au utilisateur une application
-          qui propose des défis pour devenir le meilleur écologiste possible et
-          imaginable.
+          Améliorer mes compétence et proposer au utilisateur un mini réseau
+          social qui propose des défis pour devenir le meilleur écologiste
+          possible et imaginable.
         </p>
         <h3>Fonctionnalités de l'application</h3>
         <ul>
           <li>Proposer des défis au utilisateur</li>
           <li>Proposer un suivi de ses défis dans le temps</li>
+          <li>Proposer un système de messagerie entre utilisateur</li>
         </ul>
         <h3>Technologies employés</h3>
-        <ul>
-          <li>Language de programmation : Java 8</li>
-          <li>IDE : Eclipse</li>
-          <li>Gestionnaire de version : Git</li>
-          <li>Serveur d'application : wildfly</li>
-          <li>SGBD : MySql</li>
+        <ul class="tech">
+          <li><b>Language de programmation :</b> Java 8</li>
+          <li><b>IDE :</b> Eclipse</li>
+          <li><b>Gestionnaire de version :</b> Git</li>
+          <li><b>Serveur d'application :</b> wildfly</li>
+          <li><b>SGBD :</b> MySql</li>
           <li>
-            Technologies java utilisés : Spring, hibernate, JSF, Primefaces
+            <b> Technologies java utilisés :</b> Spring, hibernate, JSF,
+            Primefaces
           </li>
         </ul>
         <h3>Statut du projet</h3>
@@ -369,88 +510,6 @@
           Le projet n'est pas terminé, il est un peu fonctionnel. Il est au
           point mort.
         </p>
-      </div>
-    </div>
-
-    <h2>Gestion de la micro entreprise</h2>
-    <div class="projet">
-      <div class="image">
-        <div style="text-align: center">
-          <h2>Tabbed Image Gallery</h2>
-          <p>Click on the images below:</p>
-        </div>
-
-        <!-- The four columns -->
-        <div class="row">
-          <div class="column">
-            <img
-              src="img_nature.jpg"
-              alt="Nature"
-              style="width: 100%"
-              onclick="myFunction4(this);"
-            />
-          </div>
-          <div class="column">
-            <img
-              src="img_snow.jpg"
-              alt="Snow"
-              style="width: 100%"
-              onclick="myFunction4(this);"
-            />
-          </div>
-          <div class="column">
-            <img
-              src="img_mountains.jpg"
-              alt="Mountains"
-              style="width: 100%"
-              onclick="myFunction4(this);"
-            />
-          </div>
-          <div class="column">
-            <img
-              src="img_lights.jpg"
-              alt="Lights"
-              style="width: 100%"
-              onclick="myFunction4(this);"
-            />
-          </div>
-        </div>
-
-        <div class="container">
-          <span
-            onclick="this.parentElement.style.display='none'"
-            class="closebtn"
-            >&times;</span
-          >
-          <img id="expandedImg4" style="width: 100%" />
-          <div id="imgtext4"></div>
-        </div>
-      </div>
-      <div class="texte">
-        <h3>But de l'application</h3>
-        <p>
-          Apprendre le python et javascript et créer une application de gestion
-          pour une micro entreprise. L'application est en deux partie, une
-          permière partie back-end en python qui gère la base de données, et une
-          partie front-end en javascript Vue Js.
-        </p>
-        <h3>Fonctionnalités de l'application</h3>
-        <ul>
-          <li>Création d'utilisateur</li>
-          <li>
-            Gestion d'une micro entreprise (gestion des factures, dépense,
-            échéances de paiements, génération de documents comptables)
-          </li>
-        </ul>
-        <h3>Technologies employés</h3>
-        <ul>
-          <li>Language de programmation : Vue Js, Python 3.8</li>
-          <li>IDE : Visiual Studio Code</li>
-          <li>Serveur d'application :</li>
-          <li>Technologies python utilisés : Flask, SqlAlchemy, Marshmallow</li>
-        </ul>
-        <h3>Statut du projet</h3>
-        <p>Le projet est en cours.</p>
       </div>
     </div>
   </body>
