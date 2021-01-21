@@ -1,0 +1,192 @@
+html {
+  background-color: #d6dbdf;
+}
+
+/* Heading */
+h1 {
+  font-size: 48px;
+  text-shadow: -1px -1px #9df, 1px 1px #49d, -3px 0 4px #000;
+  font-family: "Segoe print", Arial, Helvetica, sans-serif;
+  color: #6bf;
+  padding: 24px 32px 32px 32px;
+  font-weight: lighter;
+  text-align: left;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 150px;
+  text-shadow: -1px -1px #fb6, 1px 1px #d60, -3px 0 4px #000;
+  font-family: "Segoe print", Arial, Helvetica, sans-serif;
+  color: #ff9933;
+  padding: 32px;
+  font-weight: lighter;
+  text-align: left;
+  display: inline;
+}
+
+.titre-appli {
+  background-color: #888;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1.2px;
+  color: #009900;
+}
+
+p,
+li {
+  font-family: Verdana;
+  color: #555555;
+  line-height: 1.5;
+  letter-spacing: 0.25px;
+}
+
+li {
+  list-style-type: circle;
+}
+
+.tech li {
+  list-style-type: none;
+}
+
+/* navbar*/
+.nav ul {
+  list-style: none;
+  background-color: #444;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2em;
+  line-height: 40px;
+  height: 40px;
+  border-bottom: 1px solid #888;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s background-color;
+}
+
+.nav a:hover {
+  background-color: #005f5f;
+}
+
+.nav a.active {
+  background-color: #fff;
+  color: #444;
+  cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
+
+/*Partie grid css pour les projets*/
+.image {
+  grid-area: image;
+}
+.texte {
+  grid-area: texte;
+}
+
+.projet {
+  display: grid;
+  grid-template-areas: "image image texte texte texte texte";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.projet > div {
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* Galerie de photos */
+
+* {
+  box-sizing: border-box;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
